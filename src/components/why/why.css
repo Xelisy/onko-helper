@@ -1,0 +1,30 @@
+.why h1 {
+    font-size: 40px;
+    color: #929DF6;
+    text-align: center;
+    margin-bottom: 85px;
+}
+.whyOne {
+    position: relative;
+    max-width: 850px;
+}
+.whyOne p {
+    line-height: 1.4;
+    color: #929DF6;
+    font-size: 24px;
+    top: 31px;
+    left: 128px;
+    font-weight: 500;
+    max-width: 660px;
+    position: absolute;
+}
+.whyOne span {
+    color: #929DF6;
+    font-size: 20px;
+    bottom: 15px;
+    font-weight: 300;
+    right: 24px;
+    max-width: 660px;
+    position: absolute;
+}
+

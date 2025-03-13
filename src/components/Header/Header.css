@@ -1,0 +1,42 @@
+.header {
+    background-color: #ABC4FF;
+}
+.header .headerCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header ul {
+    display: flex;
+   
+}
+.header li{
+    list-style: none;
+    padding: 44px 70px;
+    max-width: 244px;
+    
+}
+.header li:hover {
+    background-color: #606FC3;
+    opacity: .6;
+    border-radius: 35px;
+    
+} 
+.header li a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.header li:last-child {
+    margin-right: none;
+}
+.header button {
+    border-radius: 20px;
+    background: #FDCCD9;
+    border: 1px solid #DEAEBB;
+    padding: 20px 45px;
+    font-size: 36px;
+    color: #929DF6;
+    font-weight: 700;
+    cursor: pointer;
+}

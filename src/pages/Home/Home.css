@@ -1,0 +1,33 @@
+.home-main {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+.home-left h1 {
+    color: #929DF6;
+    max-width: 545px;
+    font-size: 40px;
+    margin-bottom: 45px;
+    margin-top: 112px;
+}
+.home-left p {
+    max-width: 545px;
+    color: #929DF6;
+    font-size: 20px;
+    margin-bottom: 36px;
+    line-height: 1.4;
+}
+.home-left button {
+    border-radius: 20px;
+    background: #FDCCD9;
+    border: 1px solid #DEAEBB;
+    padding: 20px 60px;
+    font-size: 16px;
+    color: #929DF6;
+    font-weight: 700;
+    cursor: pointer;
+}
+.home-right img {
+  margin-top: 90px;
+
+}

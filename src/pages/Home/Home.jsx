@@ -1,0 +1,24 @@
+import React from 'react'
+import './Home.css'
+import Defender from '/src/assets/png/Defender.png'
+import Why from '../../components/why/why'
+
+export default function Home() {
+  return (
+    <div className='home'>
+      <div className="wrapper">
+        <div className="home-main">
+        <div className='home-left'>
+          <h1>Ваше здоровье - наша главная забота</h1>
+          <p>Онкопомощник предлагает медицинскую информацию и тесты для выявления проблем со здоровьем. Мы стремимся помочь вам лучше понять ваше состояние и принять обоснованные решения.</p>
+          <button>Пройти тест</button>
+        </div>
+        <div className='home-right'>
+          <img src={Defender} alt='defender'/>
+        </div>
+        </div>
+        <Why/>
+        </div>
+    </div>
+  )
+}
