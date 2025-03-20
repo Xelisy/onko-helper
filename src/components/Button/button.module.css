@@ -1,0 +1,26 @@
+.button {
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.button:hover {
+    opacity: .85;
+    transition: .25s;
+}
+.main {
+    padding: 20px 62px;
+    font-size: 16px;
+}      
+.signIn {
+    padding: 20px 45px; 
+    font-size: 36px;
+}
+.light {
+    background: #FDCCD9;
+    border: 1px solid #DEAEBB;
+    color: #929DF6;
+}
+.venom {
+    background: #606FC3;
+    color: #EEEEEE;   
+}

@@ -1,7 +1,9 @@
 import React from 'react'
 import Logo from '/src/assets/svg/logo.svg'
+import Button from '../Button/button'
 import { Link } from 'react-router-dom'
 import './Header.css'
+
 
 export default function Header() {
   return (
@@ -25,7 +27,7 @@ export default function Header() {
             </li>
             </ul>
         </nav>
-        <button className='headerButton'>Вход</button>                    
+        <Button label={'Вход'} usingFor={"signIn"}/>      
         </div>
         </div>
     </div>

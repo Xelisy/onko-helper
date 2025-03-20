@@ -30,13 +30,3 @@
 .header li:last-child {
     margin-right: none;
 }
-.header button {
-    border-radius: 20px;
-    background: #FDCCD9;
-    border: 1px solid #DEAEBB;
-    padding: 20px 45px;
-    font-size: 36px;
-    color: #929DF6;
-    font-weight: 700;
-    cursor: pointer;
-}
