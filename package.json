@@ -15,7 +15,6 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.3.0"
@@ -39,6 +38,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "eslint-plugin-storybook": "^0.11.6",
+    "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "playwright": "^1.51.1",
     "prop-types": "^15.8.1",
