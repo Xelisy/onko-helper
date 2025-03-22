@@ -6,6 +6,7 @@ import Home from '../pages/Home/Home'
 import Contacts from '../pages/Contacts'
 import ClinicsLocation from '../pages/ClinicsLocation'
 import { Route, Routes } from 'react-router-dom'
+import Error from '../pages/Error'
 
 
 export default function router() {
@@ -17,6 +18,7 @@ export default function router() {
       <Route path="/articles" element={<Articles />} />
       <Route path="/location" element={<ClinicsLocation />} />
       <Route path="/contacts" element={<Contacts />} />
+      <Route path='*' element={<Error />} />
     </Routes>
   )
 }

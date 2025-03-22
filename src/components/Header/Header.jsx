@@ -10,21 +10,22 @@ export default function Header() {
     <div className='header'>
         <div className="wrapper">
         <div className="headerCont">
-        <img src={Logo} alt="logoOnko" />
+        <Link to={`/`}> <img src={Logo} alt="logoOnko"/></Link>
         <nav>
             <ul>
-            <li>
-                <Link to={`/articles`}>Статьи</Link>
-            </li>
-            <li>
-                <Link to={`/contacts`}>Контакты</Link>
-            </li>
-            <li>
-                <Link to={`/test`}>Тест</Link>
-            </li>
-            <li>
-                <a href='#'>Другие ссылки</a> 
-            </li>
+            
+                <Link to={`/articles`}><li>Статьи</li></Link>
+            
+            
+                <Link to={`/contacts`}><li>Контакты</li></Link>
+            
+            
+                <Link to={`/test`}><li>Тест</li></Link>
+            
+            
+                <Link to={`*`}><li>Другие ссылки</li></Link>
+        
+            
             </ul>
         </nav>
         <Button label={'Вход'} usingFor={"signIn"}/>      

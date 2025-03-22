@@ -1,0 +1,13 @@
+
+h1 {
+    display: flex;
+    justify-items: center;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.center-link {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+  }
