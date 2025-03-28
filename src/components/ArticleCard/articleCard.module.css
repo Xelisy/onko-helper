@@ -1,0 +1,21 @@
+.articleCard {
+    padding: 33px 15px;
+    height: 500px;
+    position: relative;
+    border-radius: 20px;
+    max-width: 337px;
+    color: #FFFFFF;
+}
+.articleCard .title {
+    font-size: 32px;
+}
+.articleCard .date {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.articleCard .author {
+    position: absolute;
+    bottom: 15px;
+    font-size: 32px;
+}

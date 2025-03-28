@@ -1,0 +1,25 @@
+.doctorOnCall {
+  margin-bottom: 180px;
+}
+.doctorOnCall h1 {
+  color: #929DF6;
+  font-size: 48px;
+  margin-bottom: 62px;
+  font-weight: 900;
+}
+.doctorOnCall p {
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    max-width: 725px;
+    text-align: center;
+    color: #606FC3;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+.doctorOnCall .callCards {
+  display: flex;
+  justify-content: space-between;
+}

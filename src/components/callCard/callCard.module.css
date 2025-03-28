@@ -1,0 +1,19 @@
+.callCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 364px;
+}
+.callCard img {
+    margin-bottom: 45px;
+}
+.callCard h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #606FC3;
+    font-weight: 600;
+}
+.venom h2 {
+    color: #ABC4FF
+}

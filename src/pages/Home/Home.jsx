@@ -3,6 +3,9 @@ import './Home.css'
 import Button from '../../components/Button/button'
 import Defender from '/src/assets/png/Defender.png'
 import Why from '../../components/why/why'
+import DoctorOnCall from '../../components/doctorOnCall/doctorOnCall'
+import Article from '../../components/articles/article'
+
 
 export default function Home() {
   return (
@@ -19,7 +22,10 @@ export default function Home() {
         </div>
         </div>
         <Why/>
+        <DoctorOnCall />
+        <Article />
         </div>
+      
     </div>
   )
 }

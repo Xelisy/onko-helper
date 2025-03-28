@@ -1,0 +1,64 @@
+.message {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.left {
+    margin-bottom: 60px;
+}
+.right {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+.message img {
+    position: absolute;
+    bottom: 0px;
+    user-select: none;
+}
+.right img {
+    transform: rotateY(3.142rad);
+    right: -65px;
+}
+.left img {
+    left: -65px;
+}
+.message p {
+    position: relative;
+    padding: 30px 20px 30px 50px;
+    line-height: 1.4;
+    color: #929DF6;
+    font-size: 24px;
+    margin-left: 65px;
+    border-radius: 20px;
+    font-weight: 600;
+    user-select: none;
+}
+.left p {
+    width: 100%;
+    max-width: 700px;
+}
+.right p {
+    width: 100%;
+    max-width: 650px;
+}
+.message span {
+    position: absolute;
+    bottom: 10px;
+    right: 24px;
+    margin: 0 auto;
+    color: #929DF6;
+    font-size: 20px;
+    font-weight: 300;
+}
+.venom img {
+    filter: brightness(0) saturate(100%) invert(81%) sepia(32%) saturate(387%) hue-rotate(204deg) brightness(94%) contrast(88%);
+}
+.light p{
+    background: #FDCCD9;
+    color: #929DF6;
+}
+.venom p {
+    background: #C2BEE1;
+    color: #606FC3;  
+}
