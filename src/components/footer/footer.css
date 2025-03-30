@@ -1,0 +1,55 @@
+.footer {
+    position: relative;
+    background-color: #ABC4FF;
+    max-width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.footer img {
+    position: absolute;
+    bottom: -4px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.footer .up {
+    margin-top: 50px;
+    color: #606FC3;
+    
+}
+.footer .up h2 {
+    font-weight: 400;
+}
+.footer a {
+    font-weight: 900;
+    color: #606FC3;
+}
+.footer .up h2:first-child {
+    text-align: left;
+}
+.footer .up h2:last-child {
+    text-align: right;
+}
+.footer .down {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #606FC3;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.footer .down p:last-child {
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .25s;
+}
+.footer .down p:last-child:hover {
+    opacity: .85
+}
+.text-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    transform: translateY(345px);
+}

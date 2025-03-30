@@ -1,0 +1,53 @@
+.title {
+    max-width: 867px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #929DF6;
+    margin-bottom: 80px;
+}
+.title h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.title p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+.professional {
+    margin-bottom: 180px;
+}
+.professional img {
+    cursor: pointer;
+}
+.number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #606FC3;
+    margin-bottom: 60px;
+    margin-right: 100px;
+}
+.number h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+.number-left {
+    display: flex;
+    align-items: center;
+}
+.number .phone {
+    font-weight: 700;
+} 
+
+.map  {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #606FC3;
+}
+.map h2 {
+    font-weight: 500;
+}

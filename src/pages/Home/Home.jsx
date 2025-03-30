@@ -5,10 +5,13 @@ import Defender from '/src/assets/png/Defender.png'
 import Why from '../../components/why/why'
 import DoctorOnCall from '../../components/doctorOnCall/doctorOnCall'
 import Article from '../../components/articles/article'
+import Professional from '../../components/professional/professional'
+
 
 
 export default function Home() {
   return (
+    
     <div className='home'>
       <div className="wrapper">
         <div className="home-main">
@@ -24,8 +27,9 @@ export default function Home() {
         <Why/>
         <DoctorOnCall />
         <Article />
+        <Professional />
         </div>
-      
+        
     </div>
   )
 }
