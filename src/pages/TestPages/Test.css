@@ -1,0 +1,46 @@
+.testCont {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.testCont span {
+    position: absolute;
+    bottom: 40px;
+    width: calc(100% - 10px);
+    height: 10px;
+    background-color: #DEAEBB;
+}
+.backP {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #DEAEBB;
+}
+.testCont p {
+    font-size: 32px;
+    transform: translateY(10px);
+    text-align: center;
+    color: #fddcd9;
+}
+.active {
+    width: 90px;
+    height: 90px;
+}
+.active p {
+    color: #ffffff;
+    transform: translateY(20px) translateX(-1px);
+    text-align: center;
+    font-size: 42px;
+}
+.test.venom .backP, .test.venom .testLine {
+    background-color: #fddcd9
+}
+.test.venom .testCont p {
+    color: #DEAEBB
+}
+.test.venom .active p {
+    color: #383543;
+}

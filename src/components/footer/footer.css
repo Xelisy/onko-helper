@@ -5,16 +5,26 @@
     height: 500px;
     overflow: hidden;
 }
+.footer.venom {
+    background-color: #606FC3;
+}
 .footer img {
     position: absolute;
     bottom: -4px;
     max-width: 100%;
     margin: 0 auto;
+    pointer-events: none;
+}
+.footer.venom img {
+    filter: brightness(0) saturate(100%) invert(82%) sepia(5%) saturate(1768%) hue-rotate(296deg) brightness(94%) contrast(83%);
 }
 .footer .up {
     margin-top: 50px;
     color: #606FC3;
     
+}
+.footer.venom .up {
+    color: #C2BEE1
 }
 .footer .up h2 {
     font-weight: 400;
@@ -23,11 +33,16 @@
     font-weight: 900;
     color: #606FC3;
 }
+.footer.venom a {
+    color: #C2BEE1
+}
 .footer .up h2:first-child {
     text-align: left;
+    margin-bottom: 30px;
 }
 .footer .up h2:last-child {
     text-align: right;
+    z-index: 9999;
 }
 .footer .down {
     display: flex;
@@ -36,6 +51,7 @@
     color: #606FC3;
     font-size: 20px;
     margin: 0 auto;
+    user-select: none;
 }
 .footer .down p:last-child {
     font-size: 24px;
@@ -50,6 +66,77 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 999;
-    transform: translateY(345px);
+    z-index: 99;
+    transform: translateY(305px);
+}
+@media (max-width: 1280px) {
+    .footer .up {
+        margin-top: 30px;
+    }
+    .footer .up h2:first-child {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .footer {
+        height: 350px;
+    }
+    .text-down {
+        transform: translateY(190px);
+    }
+}
+@media (max-width: 820px) {
+    .footer {
+        height: 300px;
+    }
+    .footer .up {
+        font-size: 14px;
+        
+    }
+    .footer .down {
+        font-size: 14px;
+        margin: 0 auto;
+    }
+    .footer .up {
+        max-width: 500px;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    .footer .up h2:first-child {
+        margin-bottom: 15px;
+    }
+    .text-down {
+        transform: translateY(110px);
+    }
+    .footer .up h2:last-child {
+        text-align: left;
+    }
+    .footer .down p:first-child {
+        max-width: 150px;
+    }
+    .footer .down p:last-child {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: right;
+        cursor: pointer;
+        transition: .25s;
+    }
+}
+@media (max-width: 520px) {
+    .footer .up {
+        font-size: 10px;
+        max-width: 390px;
+    }
+    .down img {
+        transform: scale(1.55) translateY(-14px);
+    }
+    .footer .down p:last-child {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: right;
+        cursor: pointer;
+        transition: .25s;
+    }
+    .text-down {
+        transform: translateY(140px);
+    }
 }

@@ -7,12 +7,14 @@
     margin-bottom: 80px;
 }
 .title h1 {
-    font-size: 32px;
     margin-bottom: 40px;
 }
 .title p {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.5;
+}
+.home.venom .title p {
+    color: #abc4ff
 }
 .professional {
     margin-bottom: 180px;
@@ -33,6 +35,12 @@
     font-size: 24px;
     font-weight: 500;
 }
+.home.venom .number h2 {
+    color: #abc4ff
+}
+.number h2:last-child {
+    font-size: 32px;
+}
 .number-left {
     display: flex;
     align-items: center;
@@ -50,4 +58,127 @@
 }
 .map h2 {
     font-weight: 500;
+}
+.home.venom .map img {
+    filter: brightness(0) saturate(100%) invert(45%) sepia(25%) saturate(1192%) hue-rotate(194deg) brightness(92%) contrast(86%);
+}
+.home.venom .map h2 {
+    color: #abc4ff
+}
+@media (max-width: 1280px) {
+    .title {
+        max-width: 600px;
+    }
+    .title p {
+        font-size: 16px;
+    }
+    .number {
+        margin-bottom: 80px;
+    }
+    .number h2 {
+        margin-left: 60px;
+    }
+    .number h2:first-child {
+        margin-left: 120px;
+    }
+    .number, .map  {
+        flex-direction: column;
+        align-items: center;
+    }
+    .number-left img {
+        max-width: 95px;
+    }
+    .map img {
+        max-width: 580px;
+    }
+    .number-left h2, .map h2 {
+        font-weight: 400;
+    }
+    .map h2 {
+        margin-bottom: 30px
+    }
+}
+@media (max-width: 820px) {
+    .title {
+        max-width: 400px;
+    }
+    .title p {
+        font-size: 16px;
+    }
+    .number {
+        margin-bottom: 80px;
+    }
+    .number h2 {
+        margin-left: 30px;
+    }
+    .number h2:first-child {
+        margin-left: 60px;
+    }
+    .number, .map  {
+        flex-direction: column;
+        align-items: center;
+    }
+    .number-left img {
+        max-width: 60px;
+    }
+    .map img {
+        max-width: 400px;
+    }
+    .number-left h2, .map h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .number-left {
+        margin-bottom: 15px;
+    }
+    .number h2:last-child {
+        font-size: 24px;
+    }
+    .map h2 {
+        margin-bottom: 30px
+    }
+    .professional {
+        margin-bottom: 80px;
+    }
+}
+@media (max-width: 520px) {
+    .title {
+        max-width: 300px;
+    }
+    .number h2:first-child {
+        min-width: 210px;
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+    .number {
+        max-width: 320px;
+        align-items: flex-start;
+    }
+    .number h2:last-child {
+        font-size: 16px;
+        margin-left: 0px;
+        
+    }
+    .number-left img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .title p {
+        font-size: 14px;
+    }
+    .number-left h2 {
+        font-size: 16px;
+    }
+    .map {
+        align-items: flex-start;
+    }
+    .map h2 {
+        text-align: left;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .map img {
+        max-width: 300px;
+    }
+    
 }

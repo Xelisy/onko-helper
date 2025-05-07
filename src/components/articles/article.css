@@ -1,13 +1,27 @@
 .article {
-    margin-bottom: 180px;
+    margin-bottom: 100px;
 }
 .article h1{
-    color: #929DF6;
-    font-weight: 900;
-    font-size: 48px;
     margin-bottom: 160px;
 }
 .articlesCard {
     display: flex;
     justify-content: space-between;
+}
+@media (max-width: 1280px) {
+    .article h1 {
+        margin: 0 auto;
+        max-width: 570px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .articlesCard {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 520px) {
+    .article {
+        margin-bottom: 40px;
+    }
 }

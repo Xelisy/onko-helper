@@ -1,0 +1,108 @@
+.login {
+    position: relative;
+    width: calc(100vw);
+    height: 100vh;
+    overflow: hidden;
+}
+body {
+    overflow: hidden
+}
+.caroussel {
+    position: absolute;
+    display: flex;
+}
+.caroussel img {
+    will-change: transform;
+    animation: scrolling 60s linear infinite;
+}
+@keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+.bgVenom {
+    position: relative;
+}
+.bgVenom img {
+    position: absolute;
+}
+.bgVenom img:last-child {
+    will-change:transform;
+    animation: shake 7s ease-in-out infinite;
+}
+@keyframes shake {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+      }
+    100% {
+      transform: translateY(0);
+    }
+}
+.login .bgLogin {
+    position: absolute;
+    user-select: none;
+    z-index: 2;
+    width: 100%;
+    min-height: 100vh
+}
+.login .btnCont {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.btnCont button {
+    font-size: 24px;
+}
+.login .loginCont {
+    height: 100vh;
+}
+.login .loginTop {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.displayMirrorText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+.displayMirror {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgb(194, 190, 225, 0.84);
+}
+.titleLogin {
+    font-size: 32px;
+    margin-right: 45px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor:pointer
+}
+.titleLogin:last-child {
+    margin-right: 0px;
+}
+.login .activeLine {
+    position: relative;
+    width: 100%;
+}
+.login .activeLine::before {
+    content: "";
+    width: 99%;
+    height: 6px;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 5px;
+    bottom: -10px;
+}

@@ -10,10 +10,69 @@
 }
 .callCard h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 32px;
     color: #606FC3;
     font-weight: 600;
 }
 .venom h2 {
     color: #ABC4FF
+}
+@media (max-width: 1280px) {
+    .callCard {
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .callCard h2 {
+        font-size: 24px;
+    }
+    .callCard img {
+        max-height: 50%;
+    }
+    img[data-alt="card /src/assets/png/Screen.png}"] {
+        max-width: 70%;
+        max-height: none;
+    }
+}
+@media (max-width: 820px) {
+    .callCard {
+        flex-direction: row-reverse;
+        align-items: center;
+        max-width: none;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        
+    }
+    .left {
+        flex-direction: row;
+    }
+    .callCard img {
+        max-height: 100px;
+        margin-bottom: 0px;
+    }
+    .callCard h2 {
+        text-align: left;
+        font-size: 20px;
+        max-width: 250px;
+        font-weight: 500
+    }
+    .left h2 {
+        text-align: right
+    }
+    
+}
+@media (max-width: 520px) {
+    .callCard h2 {
+        text-align: left;
+        font-size: 16px;
+        max-width: 150px;
+        font-weight: 500
+    }
+    .left h2 {
+        text-align: right
+        
+    }
+    .callCard img {
+        max-height: 80px;
+        margin-bottom: 0px;
+    }
 }

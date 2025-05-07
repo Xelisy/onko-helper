@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom'
 import './Header.css'
 
 
-export default function Header() {
+export default function Header({theme}) {
   return (
-    <div className='header'>
+    <div className={`header ${theme}`}>
         <div className="wrapper">
         <div className="headerCont">
-        <Link to={`/`}> <img src={Logo} alt="logoOnko"/></Link>
+        <Link to={`/`} className='logo'> <img src={Logo} alt="logoOnko"/></Link>
         <nav>
             <ul>
             
@@ -28,7 +28,9 @@ export default function Header() {
             
             </ul>
         </nav>
-        <Button label={'Вход'} usingFor={"signIn"}/>      
+        <div className='buttonCont'>
+          <Link to={`/login`}><Button label={'Вход'} usingFor={"signIn"}/></Link>
+        </div>
         </div>
         </div>
     </div>

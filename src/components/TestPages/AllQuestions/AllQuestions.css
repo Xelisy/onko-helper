@@ -1,0 +1,39 @@
+.testTitle {
+    position: relative;
+    margin-bottom: 60px;
+}
+.allQuestions button {
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.allQuestions {
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+}
+.oneInput {
+    margin-bottom: 10px;
+}
+.allQuestions p {
+    width: 100%;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 600;
+    color: #929DF6;
+}
+.allQuestions {
+    padding-top: 80px;
+    position: relative;
+}
+.allQuestions span {
+    background-color: #ABC4ff;
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    top: 45px;
+    left: 0px;
+}
+.allQuestions.venom span {
+    background-color: #929DF6;
+}

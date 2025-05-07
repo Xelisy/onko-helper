@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 
 
-export default function footer() {
+export default function footer({theme}) {
 
     const handleScrollToTop = () => {
         window.scrollTo({
@@ -17,7 +17,7 @@ export default function footer() {
     
 
   return (
-    <footer className='footer'>
+    <footer className={`footer ${theme}`}>
         <div className="up wrapper">
             <h2>Вы обнаружили проблемы на сайте? Обратитесь 
                 <Link to={`/contacts`}> сюда.</Link>

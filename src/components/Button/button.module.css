@@ -23,4 +23,30 @@
 .venom {
     background: #606FC3;
     color: #EEEEEE;   
+    border: none;
+}
+.signIn.venom {
+    background: #FDCCD9;
+    color: #606FC3;
+}
+@media (max-width: 1440px) {
+    .signIn {
+        font-size: 32px; 
+    }
+}
+@media (max-width: 1280px) {
+    .signIn {
+        padding: 12px 25px;
+        font-size: 24px
+    }
+}
+@media (max-width: 820px) {
+    .signIn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .main {
+        font-size: 16px;
+        padding: 15px 40px;
+    }   
 }

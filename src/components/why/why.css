@@ -1,6 +1,4 @@
 .why h1 {
-    font-size: 40px;
-    color: #929DF6;
     text-align: center;
     margin-bottom: 85px;
 }
@@ -8,5 +6,5 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 180px;
+    margin-bottom: 150px;
 }

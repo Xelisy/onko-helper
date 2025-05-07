@@ -2,8 +2,11 @@ import React from 'react'
 import './professional.css'
 import Map from '/src/assets/png/map.png'
 import Poppins from '/src/assets/png/merrypopins.png'
+import PoppinsVenom from '/src/assets/png/merrypoppinsvenom.png'
+import { useTheme } from '../../context/ThemeContext'
 
 export default function professional() {
+  const {theme} = useTheme()
   return (
     <div className='professional'>
         <div className='title'>
@@ -13,8 +16,8 @@ export default function professional() {
     <div className='number'>
         <div className="number-left">
             <h2>Центр амбулаторной онкологической помощи:</h2>
+            <img src={theme === 'light' ? Poppins : PoppinsVenom} alt="flyman" />
         </div>
-        <img src={Poppins} alt="flyman" />
         <h2 className='phone'>+7 (846) 330-07-25</h2>
     </div>
     <div className='map'>
