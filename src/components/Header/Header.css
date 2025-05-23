@@ -18,7 +18,21 @@ body {
     margin: 0;
     padding-top: 110px; 
 }
-
+.header .logo, .header .buttonCont {
+    
+}
+nav ul a:first-child li {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.header .themeIcons {
+    margin-right: 15px;
+    cursor: pointer;
+}
+.header .buttonCont {
+    display: flex;
+    align-items: center;
+}
 .header .headerCont {
     display: flex;
     align-items: center;
@@ -50,6 +64,9 @@ body {
 } 
 .header li:last-child {
     margin-right: 0;
+}
+.header a img {
+    border-radius: 50px;
 }
 @media (max-width: 1440px) {
     .header li {
@@ -109,6 +126,11 @@ grid-row-gap: 0px;
         justify-content: center;
         margin: 0 auto;
         grid-area: 1 / 4 / 2 / 6; 
+    }
+    .header .themeIcons img {
+        margin-right: 15px;
+        cursor: pointer;
+        width: 30px;
     }
 }
 @media (max-width: 520px) {

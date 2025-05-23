@@ -37,3 +37,8 @@
 .allQuestions.venom span {
     background-color: #929DF6;
 }
+@media (max-width: 820px) {
+    .testTitle p {
+        font-size: 20px;
+    }
+}

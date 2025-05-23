@@ -611,21 +611,38 @@ export default function Test() {
 const [isActive, setIsActive] = useState(1);
 const {theme} = useTheme()
 
-const handleChange = () => {
+const handleChange = (sc) => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth' 
     });
     setIsActive(Number(isActive) + 1)
-    console.log('it is parent')
+    console.log({
+        page: isActive,
+        test: sc
+    })
+    const currentMaxPage = Number(localStorage.getItem('maxPage')) || 0;
+
+    if (isActive > currentMaxPage) {
+        localStorage.setItem('maxPage', Number(isActive) + 1);
+    }
+    
 }
 const isActiveFunc = (value) => {
-    setIsActive(value);
-    console.log(isActive);
+    if (localStorage.getItem('maxPage') >= value) {
+        setIsActive(value);
+    }
+    if (value == Number(isActive) + 1) {
+        setIsActive(value);
+    }
+    else if (Number(value) < Number(isActive)) {
+        setIsActive(value);
+    }
 }
   return (
     <div className={`test ${theme}`}>
       <div className="wrapper">
+        
         <div className="testCont">
         <span class='testLine'></span>
         {Object.keys(testQuestions).map(one => (
@@ -635,6 +652,7 @@ const isActiveFunc = (value) => {
         ))}
         </div>
         <div className="questionPages">
+        {/* <video muted autoplay="autoplay" controls src="src/assets/png/swagga.mp4" type="video/mp4"></video> */}
             {Object.keys(testQuestions).map(quKey => (
             <div key={quKey}>
                 {isActive == quKey && <AllQuestions callback={handleChange} theme={theme} questions={testQuestions[quKey]} isLastPage={quKey == Object.keys(testQuestions).length ? true : false} />}

@@ -2,13 +2,11 @@ import React from 'react'
 import './why.css'
 import Message from '../Message/message'
 import Button from '../Button/button'
-import ThemeToggleButton from '../ThemeToggle/themeToggle'
 
 export default function why({theme}) {
   return (
     <div className='why'>
         <h1>Почему это важно?</h1>
-         <ThemeToggleButton/>
         <div className="whyAQCont">
             <Message 
               title={"Ты правда хочешь больше заняться своим здоровьем и проконсультироваться со специалистом? У тебя же ничего не болит, зачем тогда это нужно?"} 

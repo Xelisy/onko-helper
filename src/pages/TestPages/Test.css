@@ -44,3 +44,101 @@
 .test.venom .active p {
     color: #383543;
 }
+.test video {
+    position: fixed;
+    top: 300px;
+    height: 400px;
+}
+@media (max-width: 1280px) {
+    .test {
+        margin-top: 80px;
+    }
+    .testCont p {
+        transform: translateY(6px);
+        font-size: 24px;
+    }
+    .testCont span {
+        position: absolute;
+        bottom: 25px;
+        width: calc(100% - 10px);
+        height: 10px;
+        background-color: #DEAEBB;
+    }
+    .backP {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: #DEAEBB;
+    }
+    .active {
+        width: 60px;
+        height: 60px;
+    }
+    .active p {
+        font-size: 32px;
+        transform: translateY(12px) translateX(-1px);
+    }
+}
+@media (max-width: 820px) {
+    .test {
+        margin-top: 120px;
+    }
+    .testCont p {
+        transform: translateY(6px);
+        font-size: 16px;
+    }
+    .testCont span {
+        position: absolute;
+        bottom: 20px;
+        width: calc(100% - 10px);
+        height: 6px;
+        background-color: #DEAEBB;
+    }
+    .backP {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: #DEAEBB;
+    }
+    .active {
+        width: 50px;
+        height: 50px;
+    }
+    .active p {
+        font-size: 32px;
+        transform: translateY(6px) translateX(-1px);
+    }
+}
+@media (max-width: 580px) {
+    .test {
+        margin-top: 120px;
+    }
+    .testCont p {
+        transform: translateY(2px);
+        font-size: 14px;
+    }
+    .testCont span {
+        position: absolute;
+        bottom: 12px;
+        width: calc(100% - 10px);
+        height: 6px;
+        background-color: #DEAEBB;
+    }
+    .backP {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: #DEAEBB;
+    }
+    .active {
+        width: 30px;
+        height: 30px;
+    }
+    .active p {
+        font-size: 20px;
+        transform: translateY(4px) translateX(-1px);
+    }
+}
